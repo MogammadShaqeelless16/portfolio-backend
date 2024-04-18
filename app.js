@@ -16,12 +16,11 @@ const { getPublication } = require("./Controller/publicationController");
 app.use(cookieParser());
 app.use(
   cors({
-     origin: ['https://portfolio-frontend-v121.onrender.com'],
+    origin: ['https://portfolio-frontend-v121.onrender.com'],
     methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
     credentials: true,
   })
 );
-app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "build")));
 
