@@ -16,9 +16,9 @@ const { getPublication } = require("./Controller/publicationController");
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ['https://portfolio-frontend-v121.onrender.com'],
-    methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
-    credentials: true,
+    origin: ['https://portfolio-frontend-v121.onrender.com', 'https://shaqeel-portfolio.onrender.com'],
+    methods: ['GET', 'POST', 'DELETE', 'PATCH', 'PUT'],
+    credentials: true
   })
 );
 app.use(express.json());
