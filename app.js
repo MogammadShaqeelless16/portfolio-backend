@@ -16,7 +16,7 @@ const { getPublication } = require("./Controller/publicationController");
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ['https://portfolio-frontend-v121.onrender.com', 'https://shaqeel-portfolio.onrender.com'],
+    origin: ['https://portfolio-frontend-v121.onrender.com', 'https://shaqeel-portfolio.onrender.com', 'https://shaqeelless.netlify.app/'],
     methods: ['GET', 'POST', 'DELETE', 'PATCH', 'PUT'],
     credentials: true
   })
