@@ -1,0 +1,13 @@
+name: Ping Server
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every 5 minutes
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send ping to server
+        run: curl -I https://portfolio-backend-389u.onrender.com/healthcheck
